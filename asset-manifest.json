@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/sticky-notes/static/css/main.c477f00e.chunk.css",
+    "main.js": "/sticky-notes/static/js/main.08977ab8.chunk.js",
+    "main.js.map": "/sticky-notes/static/js/main.08977ab8.chunk.js.map",
+    "runtime-main.js": "/sticky-notes/static/js/runtime-main.590dca15.js",
+    "runtime-main.js.map": "/sticky-notes/static/js/runtime-main.590dca15.js.map",
+    "static/js/2.5e9ed7bd.chunk.js": "/sticky-notes/static/js/2.5e9ed7bd.chunk.js",
+    "static/js/2.5e9ed7bd.chunk.js.map": "/sticky-notes/static/js/2.5e9ed7bd.chunk.js.map",
+    "index.html": "/sticky-notes/index.html",
+    "precache-manifest.d7d50496c9b4c9b1001c500c261f368d.js": "/sticky-notes/precache-manifest.d7d50496c9b4c9b1001c500c261f368d.js",
+    "service-worker.js": "/sticky-notes/service-worker.js",
+    "static/css/main.c477f00e.chunk.css.map": "/sticky-notes/static/css/main.c477f00e.chunk.css.map",
+    "static/js/2.5e9ed7bd.chunk.js.LICENSE.txt": "/sticky-notes/static/js/2.5e9ed7bd.chunk.js.LICENSE.txt",
+    "static/media/AddNoteDemo.png": "/sticky-notes/static/media/AddNoteDemo.314ea773.png",
+    "static/media/AllNotes.css": "/sticky-notes/static/media/AllNotes.f3a9a75b.jpg",
+    "static/media/AllNotesDemo.png": "/sticky-notes/static/media/AllNotesDemo.44a0d36d.png",
+    "static/media/Ankita.jpg": "/sticky-notes/static/media/Ankita.40193d9e.jpg",
+    "static/media/SingleNote.css": "/sticky-notes/static/media/Background.f504e53c.jpg",
+    "static/media/Category.css": "/sticky-notes/static/media/Categories.4c3586f2.jpg",
+    "static/media/CategoriesDemo.png": "/sticky-notes/static/media/CategoriesDemo.bda99517.png",
+    "static/media/Delete.png": "/sticky-notes/static/media/Delete.35bc3da1.png",
+    "static/media/Github.png": "/sticky-notes/static/media/Github.357c3c73.png",
+    "static/media/Gmail.png": "/sticky-notes/static/media/Gmail.2c1a7560.png",
+    "static/media/HomePageBackground.jpg": "/sticky-notes/static/media/HomePageBackground.526800e1.jpg",
+    "static/media/Refresh.png": "/sticky-notes/static/media/Refresh.e47b9fcf.png",
+    "static/media/Search.png": "/sticky-notes/static/media/Search.ad0804cf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.590dca15.js",
+    "static/js/2.5e9ed7bd.chunk.js",
+    "static/css/main.c477f00e.chunk.css",
+    "static/js/main.08977ab8.chunk.js"
+  ]
+}
