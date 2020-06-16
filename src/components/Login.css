@@ -1,0 +1,11 @@
+.login, .signup
+{
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    min-height: 101vh; 
+    /* width: 100vw; */
+    width: 78.5vw;
+}

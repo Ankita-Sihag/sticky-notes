@@ -1,0 +1,47 @@
+.add-note
+{
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    min-height: 101vh; 
+
+    width: 78.5vw;
+}
+
+.add-note .form
+{
+    display: flex;
+ 
+}
+
+.add-note-error-message
+{
+    margin-top: 3rem;
+    margin-left: 0rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: red;
+    font-family: Calibri;
+}
+
+@media(max-width: 800px)
+{
+    .add-note form
+    {
+        display: block;
+        margin-left: 1rem;
+        margin-top: 7rem;
+    }
+
+    .add-note .left
+    {
+        margin-left: 0rem;
+    }
+
+    .add-note .right
+    {
+        margin-left: 0rem;
+    }
+}

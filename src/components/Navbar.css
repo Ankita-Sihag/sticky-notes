@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+.navbar-div
+{
+    display: flex;
+    height: 15vh;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    font-family: 'Corbel';
+    /* font-weight: bold; */
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* width: 100v; */
+}
+
+.navbar-div .left-part
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* border: 2px solid red; */
+    /* align-items: center; */
+}
+
+.navbar-div .icon 
+{
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px gray;
+    /* border: 2px double black; */
+}
+
+.navbar-div .icon img
+{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.navbar-div .site-name
+{
+    background-color: black;
+    /* width: 15rem;  */
+    margin-left: 1rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    /* margin-right: 0rem; */
+    /* padding-right: 0rem; */
+    /* border: 2px solid red; */
+}
+
+.navbar-div .main-list
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:active, .link:hover{
+    color: #33ccff;
+}
+
+.navbar-div .main-list div, .navbar-div .auth-list div{
+    padding-right: 1rem;
+
+}
+
+.navbar-div .auth-list{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.navbar-div .logout-button{
+    font-size: 1.2rem;
+    /* padding:  0.1rem 0.3rem; */
+    background-color: black;
+    font-family: Corbel;
+    color: white;
+    border: none;
+    
+}
+
+.navbar-div .logout-button:hover{
+    cursor: pointer;
+    color: #33ccff;
+}
+
+
+@media(max-width: 800px)
+{
+    .navbar-div
+    {
+        min-width: 600px;
+        width: 100%;
+        
+    }
+
+}
+
+

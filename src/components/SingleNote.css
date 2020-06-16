@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+.single-note
+{
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    min-height: 101vh; 
+
+    width: 78.5vw;
+}
+
+.single-note .top
+{
+    display: flex;
+    /* border: 2px solid blue; */
+    justify-content: space-between;
+    align-items: center;
+    width: 78vw;
+    /* font-weight: bold; */
+}
+
+.single-note-heading
+{
+    font-size: 2.5rem;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    /* position: absolute; */
+    /* right: 0.1rem; */
+    padding-left: 5rem;  
+    /* padding-right: 10rem; */
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    /* z-index: -1; */
+    /* border: 2px solid red; */
+    box-shadow: 5px 5px 5px black;
+    width: 20rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.single-note .dates
+{
+    display : flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.single-note .dates div
+{
+    margin-left: 3rem;
+    margin-top: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.single-note .dates span
+{
+    font-family: Candara;
+    font-size: 1.3rem;
+}
+
+.single-note .actions
+{
+    position: absolute;
+    right: 2rem;
+    /* top: 1rem; */
+    margin-top: 1rem;
+}
+
+
+
+.single-note .actions img
+{
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0.2rem;
+    margin-top: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+}
+
+
+.single-note .box
+{
+    min-height: 20rem;
+    width: 20rem;
+    margin-left: 10rem;
+    margin-top: 4rem;
+    padding: 2rem;
+    margin-bottom: 8rem;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.single-note .title
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.single-note .note
+{
+    font-family: "Bad Script", cursive;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    white-space: pre-wrap;
+}
+
+@media(max-width: 800px)
+{
+    .single-note .top
+    {
+        /* display: flex; */
+        /* border: 2px solid blue; */
+        /* justify-content: space-between; */
+        display: block;
+        align-items: center;
+        width: 78vw;
+    }
+
+    .single-note .actions
+    {
+        position: unset;
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    .single-note .actions div
+    {
+        margin-left: 1rem;
+    }
+
+    .single-note .box
+    {
+        margin: 1rem;
+    }
+}

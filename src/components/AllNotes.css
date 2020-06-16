@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.allNotes
+{
+    background-image: url("../images/AllNotes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+
+    width: 78.5vw;
+   
+}
+
+.allNotes .top
+{
+    display: flex;
+}
+
+.allNotes .top .search
+{ 
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+}
+
+.allNotes .top .search label
+{
+    font-size: 2rem;
+    font-family: Gabriola;
+    color: white;
+
+}
+
+.allNotes .top .search input
+{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.allNotes .top .search button
+{
+    cursor: pointer;
+    border: 2px solid gray;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 3px;
+}
+
+.allNotes .top .search button:hover
+{
+    border: 2px solid black
+}
+
+.allNotes .top .search img
+{
+    height: 0.9rem;
+    width: 0.8rem; 
+}
+
+.allNotes .top .search .subheading
+{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    
+}
+
+.allNotes .list-of-notes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+
+}
+
+.list-of-notes{
+    overflow:hidden;
+    padding:3rem;
+}
+
+.list-of-notes li {
+
+    display:block;
+    height:11rem;
+    width:10rem;
+    padding:1rem;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transition: 0.15s linear;
+    white-space: pre-wrap;
+
+
+}
+
+
+
+.list-of-notes li{
+    margin:1rem;
+    margin-top: 2rem;
+    font-family: "Bad Script", cursive;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.list-of-notes .box
+{
+    height: 100%;
+}
+
+.list-of-notes .title
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.list-of-notes li:nth-child(even) {
+   
+    transform: rotate(4deg);
+}
+.list-of-notes li:nth-child(3n) {
+    transform: rotate(-3deg);
+}
+.list-of-notes li:nth-child(5n) {
+    transform: rotate(5deg); 
+}
+
+.list-of-notes li:nth-child(8n){
+    transform: rotate(-5deg);
+}
+
+.list-of-notes li:hover,.list-of-notes li:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+    cursor: pointer;
+}
+
+
+@media(max-width: 800px)
+{
+        
+    .allNotes .top .search
+    { 
+        display: table;
+        height: 8rem;
+        margin-top: 7rem;
+        margin-left: 1rem;
+      
+    }
+
+    .allNotes .top .search label
+    {
+        font-size: 1rem;
+        font-family: Gabriola;
+        display: table-cell;
+    }
+
+    .allNotes .top .search input
+    {
+        font-size: 1rem;
+        margin-left: 1rem;
+        display: table-cell;
+    }
+
+    .allNotes .top .search button
+    {
+        display: table-cell;
+    }
+
+    .allNotes .top .search img
+    {
+        height: 0.8rem;
+        width: 0.8rem; 
+    }
+}
+

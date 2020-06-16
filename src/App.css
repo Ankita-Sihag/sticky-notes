@@ -1,0 +1,9 @@
+.main-div-app
+{
+    height: 100%;
+}
+.main-body-app
+{
+    display: flex;
+    min-height:84vh;
+}

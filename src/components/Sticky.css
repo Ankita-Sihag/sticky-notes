@@ -1,0 +1,59 @@
+
+.sticky-bar
+{
+    /* position: fixed; */
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16vw;
+}
+
+.sticky-bar .sticky-box
+{
+    height: 4rem;
+    width: 4rem;
+    border: 2px solid black;
+    transform: rotate(-45deg);
+}
+
+.sticky-box .text
+{
+    transform: rotate(45deg);
+    font-family: Candara;
+    font-size: 2rem;
+    margin-top: 0.6rem;
+    margin-left: 0.3rem;
+}
+
+.sticky-bar .first
+{
+    background-color: #ffcccc;
+}
+
+.sticky-bar .second
+{
+    background-color: #99c2ff;
+}
+
+.sticky-bar .third
+{
+    background-color: #ff9999;
+}
+
+.sticky-bar .fourth
+{
+    background-color: #bbff99;
+}
+
+.sticky-bar .fifth
+{
+    background-color: #ffbf80;
+}
+
+.sticky-bar .sixth
+{
+    background-color: #d9b3ff;
+
+}
