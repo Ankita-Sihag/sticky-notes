@@ -8,3 +8,5 @@ The frontend is made using React js.
 
 The backend uses Node js.
 
+- Css suitable for laptops only.
+
