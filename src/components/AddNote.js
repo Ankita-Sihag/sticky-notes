@@ -50,7 +50,7 @@ class AddNote extends Component {
         })
         .then(result => {
             if(result.status !== 200)
-                throw new Error("Error in fetchig");
+                throw new Error("Error in fetching");
             return result;
         })
         .then(result => result.json())
@@ -68,7 +68,7 @@ class AddNote extends Component {
     }
     createNote = (e) => {
         e.preventDefault();
-
+        document.getElementById("create-note-button").disabled = true;
         fetch('https://sticky-notes-back-end.herokuapp.com/add-note', {
             method: "POST",
             headers: {
@@ -83,6 +83,7 @@ class AddNote extends Component {
             this.props.history.push("/sticky-notes/notes");
         })
         .catch(error => {
+            document.getElementById("create-note-button").disabled = false;
             this.setState({
                 error: "Nothing to save"
             });
@@ -238,7 +239,7 @@ class AddNote extends Component {
                         <textarea className="input-note" value={this.state.note} onChange={this.noteChangeHandler} placeholder="Your note"></textarea>
                     </div>
                     <div className="submit-button form-row">                
-                        <button type="submit" className="btn">Save</button>
+                        <button type="submit" className="btn" id="create-note-button">Save</button>
                     </div>
                 </div> 
                 <div className="right">

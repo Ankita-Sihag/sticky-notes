@@ -77,6 +77,7 @@ class Category extends Component {
     
     createNewCategory = (e) => {
         e.preventDefault();
+
         this.setState({loading: true});
         fetch('https://sticky-notes-back-end.herokuapp.com/create-category', {
             method: "POST",
@@ -96,6 +97,7 @@ class Category extends Component {
             this.componentDidMount();
         })
         .catch(error => {
+
             this.setState({
                 error: "Unable to save"
             });
@@ -173,7 +175,7 @@ class Category extends Component {
 
                     <form className="category-form" onSubmit={(e) => this.createNewCategory(e)}>
                         <input type="text" value={this.state.newCategory} onChange={(e) => this.newCategoryHandler(e)}  maxLength="13" placeholder="Add new category" />
-                        <button className="addButton" type="submit" disabled ><span> + </span></button>
+                        <button className="addButton" type="submit" disabled><span> + </span></button>
                     </form>
                 </div>
             // </div>

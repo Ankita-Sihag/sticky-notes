@@ -71,6 +71,8 @@ class SingleNote extends Component {
 
     deleteNote = (e, noteId) => {
         e.preventDefault();
+        document.getElementById("delete-note-button").style.display = "none";
+
         fetch('https://sticky-notes-back-end.herokuapp.com/delete-note/' + this.state.noteId, {
             headers: {
                 'Content-type': 'application/json',
@@ -83,6 +85,8 @@ class SingleNote extends Component {
             this.props.history.push("/sticky-notes/notes");
         })
         .catch(error => {
+            document.getElementById("delete-note-button").style.display = "block";
+
             this.setState({
                 error: "Unable to delete"
             });
@@ -116,7 +120,7 @@ class SingleNote extends Component {
                         <img src={Edit} alt="Edit" title="Edit"/>
                     </div>
                     <div className="delete" onClick={(e) => this.deleteNote(e)}>
-                        <img src={Delete} alt="Delete" title="Delete"/>
+                        <img src={Delete} alt="Delete" title="Delete" id="delete-note-button"/>
                     </div>
                 </div>
                 

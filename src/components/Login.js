@@ -33,6 +33,7 @@ class Login extends Component {
 
     loginFunction = (e) => {
         e.preventDefault();
+        document.getElementById("login-button").disabled = true;
         fetch('https://sticky-notes-back-end.herokuapp.com/auth/login', {
             method: "POST",
             headers: {
@@ -61,6 +62,7 @@ class Login extends Component {
         })
         .catch(error => {
             // console.log(error);
+            document.getElementById("login-button").disabled = false;
             this.setState({
                 error: "Invalid email or password."
             });
@@ -95,7 +97,7 @@ class Login extends Component {
                     </div>
                 
                     <div className="submit-button form-row">                
-                        <button type="submit" className="btn">Login</button>
+                        <button type="submit" className="btn" id="login-button">Login</button>
                     </div>
                 </form>
             </div>

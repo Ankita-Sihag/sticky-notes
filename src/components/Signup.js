@@ -34,6 +34,8 @@ class Signup extends Component {
 
     createAccount = (e) => {
         e.preventDefault();
+        document.getElementById("signup-button").disabled = true;
+
         fetch('https://sticky-notes-back-end.herokuapp.com/auth/signup', {
             method: "POST",
             headers: {
@@ -51,6 +53,8 @@ class Signup extends Component {
             this.props.history.push("/sticky-notes/auth/login");
         })
         .catch(error => {
+            document.getElementById("singup-button").disabled = false;
+
             error.then(e => {
                 this.setState({
                     error: e.message
@@ -87,7 +91,7 @@ class Signup extends Component {
                     </div>
                 
                     <div className="submit-button form-row">                
-                        <button type="submit" className="btn">Sign up</button>
+                        <button type="submit" className="btn" id="signup-button">Sign up</button>
                     </div>
                 </form>
             </div>

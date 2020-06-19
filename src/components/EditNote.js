@@ -77,6 +77,8 @@ class EditNote extends Component {
 
     updateNote = (e) => {
         e.preventDefault();
+        document.getElementById("edit-note-button").disabled = true;
+
         const path = window.location.pathname;
         const noteId = path.split("/")[3];
         
@@ -94,6 +96,8 @@ class EditNote extends Component {
             this.props.history.push("/sticky-notes/notes/" + noteId);
         })
         .catch(error => {
+            document.getElementById("edit-note-button").disabled = false;
+
             this.setState({
                 error: "Nothing to save"
             });
@@ -254,7 +258,7 @@ class EditNote extends Component {
                         <textarea style={{backgroundColor: colorsArr[this.state.color]}} className="input-note" value={this.state.note} onChange={this.noteChangeHandler} placeholder="Your note"></textarea>
                     </div>
                     <div className="submit-button form-row">                
-                        <button type="submit" className="btn">Save</button>
+                        <button type="submit" className="btn" id="edit-note-button">Save</button>
                     </div>
                 </div>
                 <div className="right">
