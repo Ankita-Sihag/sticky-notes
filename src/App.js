@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import { Switch, Route, HashRouter} from 'react-router-dom';
 
 import './App.css';
 import Navbar from './components/Navbar';
@@ -76,7 +76,7 @@ class App extends Component {
     return (
       <div className="main-div-app">
         
-        <BrowserRouter>
+        <HashRouter>
           <Navbar isAuth={this.state.isAuth} logout={this.logout}/>
 
           <div className="main-body-app">
@@ -112,7 +112,7 @@ class App extends Component {
             {/* </ErrorHandler> */}
             </Switch>
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
